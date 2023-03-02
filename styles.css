@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:wght@700&display=swap');
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+.container{
+    font-family: 'PT Sans', sans-serif;
+    overflow:hidden;
+}
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2A9D8F;
+    position: fixed;
+}
+nav{
+    display: flex;
+    
+}
+nav p{
+    padding-top: 10px;
+    color: #fff;
+    font-size: 2em;
+    margin-left: 2%;
+}
+nav span{
+    color: #f4a261;
+}
+nav ul{
+    display: flex;
+    margin-right: 0%;
+}
+nav li{
+    list-style: none;
+    padding: 20px 20px;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+}
+nav li:hover{
+    background-color: #f4a261;
+}
+
+#home{
+    width: 100vw;
+    height: 100vh;
+    background-color: #264653;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-family: 'Lobster', cursive;
+    color: #fff;
+    font-size: 3em;
+}
+#home p{
+    color: #f4a261;
+    font-size: 1.8em;
+}
+
+#about{
+    padding: 100px 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #264653; 
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    align-items: center;
+}
+#about img{
+    padding-left: 1em;
+    width: 100%;
+    grid-column: 1/5;
+}
+#about .info{
+    grid-column: 5/10;
+    padding: 3em;
+}
+#about .info .line{
+    height: 4px;
+    width: 60px;
+    margin-top: 10px;
+    margin-bottom: 3em;
+    background-color: #e76f51;
+    margin-left: 0;
+}
+#about .info p{
+    text-align: justify;
+    color: #fff;
+}
+#about .info #lastp{
+    margin-bottom: 20px;
+}
+#about button{
+    padding: 10px 20px;
+    background-color: #e76f51;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#about button a{
+    text-decoration: none;
+    color: #fff;
+}
+#about button:hover{
+    background-color: #f4a261;
+}
+
+#work{
+    width: 100vw;
+    height: auto;
+    background-color: #f4a261;
+    padding:6% 0;
+    text-align: center;
+}
+h2{
+    color: #fff;
+    font-size: 2em;
+    margin: 3% 0;
+}
+.grid{
+    margin-top: 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+
+}
+.projectux{
+    width: 30%;
+    height: 300px;
+    background-color: rgba(49, 196, 179, 0.7);
+}
+.projectux img{
+    width:100%;
+    height:100%;
+}
+.projectux a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+.projectux p{
+    color: rgba(255, 255, 255,0.9);
+    text-align: center;
+    font-size: 2em;
+    visibility: hidden;
+    margin-top: 20px;
+}
+.projectux i{
+    color: rgba(255, 255, 255,0.9);
+    font-size: 7em;
+    margin-top: -180px;
+    visibility: hidden;
+}
+.projectux:hover i {
+    visibility: visible;
+    color: rgba(255, 255, 255,1);
+}
+.projectux:hover p {
+    visibility: visible;
+    color: rgba(255, 255, 255,1);
+}
+.projectux:hover{
+    background-color: rgba(42, 157, 143, 1);
+}
+.project{
+    width: 30%;
+    height: 300px;
+}
+.project a{
+    text-decoration:none;
+}
+.project img{
+    width:100%;
+    height:95%;
+}
+.project p{
+    width:100%;
+    height:10%;
+    background-color: #264653;
+    padding: 10px 0;
+    text-align:center;
+    font-size:1.2em;
+    color:#fff;
+}
+.project span{
+    color: #f4a261;
+    visibility:hidden;
+}
+.project:hover span{
+    visibility:visible;
+}
+  
+#contact{
+    width: 100vw;
+    height: 80vh;
+    background-color: #264653;
+    text-align: center;
+    color: #fff;
+}
+#contact h1{
+    padding-top: 10%;
+}
+#contact p{
+    font-size: 1.5em;
+    color: #f4a261;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: 4rem;
+    font-size: 1.5em;
+}
+#profile-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+#profile-link:hover {
+    transform: translateY(8px);
+    color: #f4a261;
+}
+
+footer{
+    border-top: 6px solid #2A9D8F;
+    background-color:#264653;
+    color: #fff;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+footer .info{
+    width: 90%;
+}
+footer p{
+    text-align: center;
+    font-size: 1.2em;
+    margin-left: 70%;
+}
+
+@media handheld,screen and  (max-width: 600px){
+    nav{
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0%;
+        padding: 0;
+    }
+    nav p{
+        padding: 0;
+        text-align: center;
+    }
+    nav ul{
+        display: flex;
+    }
+    nav li{
+        padding: 5px 15px;
+    }
+    nav a{
+        font-size: 1.3em;
+    }
+    nav li:hover{
+        background-color:transparent ;
+    }
+
+    h1{
+        font-size:2em ;
+    }
+    #home p{
+        font-size: 1.3em;
+    }
+
+    #about{
+        padding: 0px 0;
+        grid-template-columns: 1fr;
+    }
+    #about img{
+        visibility: hidden;
+    }
+    #about .info{
+        text-align: center;
+    }
+    #about .info .line{
+        margin-left: 40%;
+    }
+
+    #work{
+        text-align: center;
+        justify-content:center;
+    }
+    #work h1{
+        padding-top: 90px;
+    }
+    .grid{
+        width:90%;
+        display: inline;
+    }
+    .projectux{
+        width: 70%;
+        height: 200px;
+    }
+    .projectux a{
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .projectux i{
+        margin-top: -150px;
+    }
+    .project{
+        width: 70%;
+        height: 200px;
+        margin-bottom:80px;
+    }
+    .project img{
+        width: 100%;
+        height: 100%;
+    }
+    .project p{
+        padding: 10px 0px;
+        font-size: 1em;
+        margin-top:0px;
+    }
+    .project span{
+        visibility: visible;
+    }
+
+    #contact{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #contact h1{
+        padding-top: 100px;
+    }
+    #contact p{
+        margin-top: -7px;
+        font-size: 1.2em;
+    }
+    .social {
+        display: flex;
+        margin-top: 1em;
+        flex-direction:column;
+        font-size: 1em;
+    }
+    #profile-link {
+        padding: 10px;
+        font-size: 1rem;
+        text-shadow: 2px 2px 1px #1f1f1f;
+        transition: none;
+    }
+    #profile-link:hover {
+        transform: none;
+    }
+
+    footer{
+        border-top: 2px solid #2A9D8F;
+        background-color:#264653;
+        color: #fff;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer p{
+        font-size: .8em;
+        margin-left: 1%;
+    }
+}
+@media handheld,screen and  (min-width: 600px) and (max-width: 1023px){
+    nav{
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0%;
+    }
+    nav p{
+        text-align: center;
+        padding: 0;
+    }
+    nav li{
+        padding: 10px 20px;
+    }
+    nav a{
+        font-size: 1.5em;
+    }
+    nav li:hover{
+        background-color:transparent;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+    #home p{
+        font-size: 1.7em;
+    }
+    #about{
+        padding: 0px 0;
+        grid-template-columns: 1fr;
+    }
+    #about img{
+        visibility: hidden;
+    }
+    #about .info{
+        text-align: center;
+    }
+    #about .info .line{
+        margin-left: 45%;
+    }
+    .grid{
+        display: inline;
+    }
+    #work{
+        text-align: center;
+    }
+    .projectux{
+        width: 80%;
+        height: 35%;
+    }
+    .projectux a{
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .projectux i{
+        margin-top: -150px;
+    }
+    .project{
+        width: 80%;
+        height: 35%;
+        margin-bottom:80px;
+    }
+
+    #work h1{
+        padding-top: 80px;
+    }
+
+    #contact{
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #contact h1{
+        padding-top: 100px;
+    }
+    .social {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    #profile-link {
+        padding: 7px;
+        text-decoration: none;
+        font-size: 1em;
+        transition: none;
+    }
+    #profile-link:hover {
+        transform: none;
+    }
+
+    footer{
+        height: 10vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    footer p{
+        text-align: center;
+        font-size: 2em;
+        margin-left: 1%;
+    }
+}
